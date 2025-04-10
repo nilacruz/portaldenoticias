@@ -1,13 +1,57 @@
-table {
-    background-color:midnightblue;
-    color: white;
-    text-align:center;
-    
-   
+*{
+    padding:0px;
+    margin:0px;
+
+}
+.encabezado{
+background-color: midnightblue;
+color: white;
+font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+text-align: center;
+padding: 30px;
+}
+
+#header{
+margin:auto;
+width: 500px;
+font-family: arial, helvetica, sans-serif;
+}
+ul,ol{
+list-style: none;
+}
+
+.nav li a{
+background-color:midnightblue;
+color: #fff;
+text-decoration: none;
+padding: 10px 15px;
+display: block;<
+}
+
+.nav li a:hover {
+background-color: #387dcb;
 }
 
 
-.titulo{
-font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-font-size: 50px;
+.nav > li {
+float:left;
+
+}
+
+.nav li ul {
+display: none;
+position: absolute;
+min-width: 140px;
+}
+
+.nav li:hover > ul {
+display: block;
+}
+
+.nav li ul li {
+position: relative;
+}	
+.nav li ul li ul {
+right: -140px;
+top: 0px;	
 }
