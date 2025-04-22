@@ -1,0 +1,176 @@
+*{
+    padding:0px;
+    margin:0px;
+    /* Sin margen o espacios en blanco y los aplico en general */
+
+}
+.encabezado{
+background-color: midnightblue;
+color: white;
+font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+font-size: xx-large;
+text-align: center;
+padding: 30px;
+
+}
+.titulo{
+    text-decoration: none;
+    color:white;
+    font-size: xx-large;
+    /* quita el subrayado del hipervinculo y lo pone en blanco */
+
+}
+
+.nav{
+    width: 100%;
+    background-color: midnightblue;
+    display: flex;
+    justify-content: center;
+    
+}
+
+ul,ol{
+list-style: none;
+/* sin viñetas */
+}
+
+.nav li a{
+    /* afecta a las <a> */
+background-color:midnightblue;
+color: #fff;
+text-decoration: none; /* quita el subrayado del hipervinculo */
+padding: 10px 15px;
+display: block;
+border-radius: 3px;
+position: relative;
+}
+
+.nav li a:hover {
+background-color: #387dcb;
+/* cambia de color al pasar el mause */
+}
+
+
+.nav > li {
+float:left;
+
+/* alineacion de la lista  */
+}
+
+.nav li ul {
+display: none;
+position: relative;
+min-width: 140px;
+/* oculta a las subsecciones*/
+}
+
+.nav li:hover > ul {
+display: block;
+border-radius: 3px;
+/* muestra las subsecciones al pasar el mause */
+}
+.img{
+    float: left;
+    width: 300px;
+    height: 200px;
+    padding:7px;
+  
+}
+.MiniaturaNoticia{
+  
+  width:auto;
+  margin: 7px;
+  padding:7px;
+  border-radius: 5px;
+  border-style: groove;
+  height: 220px;
+  
+  
+
+}
+
+.Titulominiatura .Autorminuatura .Entradillamin{
+    float: right;
+    width: 300px;
+    height: 200px;
+    padding:7px;
+    
+}
+
+.Titulominiatura{
+    color:midnightblue;
+}
+
+
+.Seccion{
+
+    border-bottom: 6px solid midnightblue;
+}
+
+.boton{
+    
+    background-color:midnightblue;
+    border: 2px solid midnightblue;
+    padding: 10px 20px;
+    text-align: center;
+    border-radius: 5px;
+    display: inline-block;
+    margin: 12px;
+
+}
+
+
+a{
+    text-decoration: none;
+    color:white;
+}
+
+
+.tituloNoticia{
+
+    color:black;
+    margin: 20px;
+    text-align:inherit;
+    font-family: 'Times New Roman', Times, serif;
+
+    
+}
+.AutorNoticia{
+    color:midnightblue;
+    margin: 20px;  
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.EntradillaNoticia{
+    margin: 30px;
+    text-align:justify;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+
+}
+.Not{
+    position: relative;
+    font-size:larger;
+    float: left;
+    width: 60%;
+    padding: 20px;
+    
+}
+
+.ImgNot{
+    margin: 17px;
+    width: 700px;
+    height: 500px;   
+}
+.ImgNoticia{
+    margin: 5px;
+    width: 700px;
+    height: 500px;  
+}
+
+.TextNoticia{
+    padding: 20px;
+    font-family:sans-serif;
+    text-align: justify;
+}
+
+
+
