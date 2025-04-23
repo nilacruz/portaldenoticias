@@ -49,10 +49,8 @@ background-color: #387dcb;
 /* cambia de color al pasar el mause */
 }
 
-
 .nav > li {
 float:left;
-
 /* alineacion de la lista  */
 }
 
@@ -61,6 +59,7 @@ display: none;
 position: absolute;
 min-width: 140px;
 /* oculta a las subsecciones*/
+z-index: 1000; /* Asegura que se sobreponga sobre todo */
 }
 
 .nav li:hover > ul {
@@ -68,71 +67,121 @@ display: block;
 border-radius: 3px;
 /* muestra las subsecciones al pasar el mause */
 }
-.img{
-    float: left;
+
+.nav li {
+    position: relative; /* importante para que el submenú se posicione respecto al li */
+}
+
+
+/* miniaturas*/
+.img {
+    object-fit: cover;
     width: 300px;
     height: 200px;
-    padding:7px;
+    padding: 7px;
   
 }
-.MiniaturaNoticia{
-  
-  width:auto;
-  margin: 7px;
-  padding:7px;
-  border-radius: 5px;
-  border-style: groove;
-  height: 220px;
-  
-  
 
+.MiniaturaNoticia {
+    display: flex;
+    align-items: flex-start;
+    gap: 15px;
+    width: auto;
+    margin: 7px;
+    padding: 7px;
+    border-radius: 5px;
+    border-style: groove;
+    /* altura automática según contenido */
 }
 
-.Titulominiatura .Autorminuatura .Entradillamin{
-    float: right;
-    width: 300px;
-    height: 200px;
-    padding:7px;
-    
-}
-
-.Titulominiatura{
-    color:midnightblue;
+/* Nuevo contenedor para el texto */
+.TextoMiniatura {
+    flex: 1; /* Ocupa el espacio restante */
 }
 
 
-.Seccion{
+.Titulominiatura, .Autorminiatura, .Entradillamin {
+    text-align: left;
+    padding: 7px 0;
+    width: 100%;
+    height: auto;
+}
 
+.Titulominiatura {
+    color: midnightblue;
+}
+
+.Seccion {
     border-bottom: 6px solid midnightblue;
 }
 
-.boton{
-    
-    background-color:midnightblue;
+.boton {
+    background-color: midnightblue;
     border: 2px solid midnightblue;
     padding: 10px 20px;
     text-align: center;
     border-radius: 5px;
     display: inline-block;
-    margin: 12px;
-
+    margin: 12px 0;
 }
 
-
-a{
+a {
     text-decoration: none;
-    color:white;
+    color: white;
 }
 
+
+/* noticias*/
 
 .tituloNoticia{
+
     color:black;
-    margin: 20px;
+    padding: 20px;
+    
+    font-family: 'Times New Roman', Times, serif;
+
     
 }
 .AutorNoticia{
     color:midnightblue;
-    margin: 20px;  
+    padding: 20px;
+      
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.EntradillaNoticia{
+    margin: 30px;
+    text-align:justify;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+
+}
+.Not{
+
+    font-size:larger;
+    float: left;
+    max-width: 1200px; /* o el ancho que desees */
+    margin: 0 auto; /* centra el contenido horizontalmente */
+    padding: 20px; /*  para que no quede pegado a los bordes */
+    
+}
+
+.ImgNot{
+    margin: 17px;
+    width: 700px;
+    height: 500px;   
+    
+}
+.ImgNoticia{
+    margin: 5px;
+    width: 700px;
+    height: 500px;  
+    text-align: center;
+}
+
+.TextNoticia{
+    padding: 20px;
+    font-family:sans-serif;
+    text-align: justify;
+
 }
 
 
