@@ -94,7 +94,7 @@ border-radius: 3px;
     /* altura automática según contenido */
 }
 
-/* Nuevo contenedor para el texto */
+
 .TextoMiniatura {
     flex: 1; /* Ocupa el espacio restante */
 }
@@ -184,6 +184,145 @@ a {
 
 }
 
+/* pagina de inicio*/
+article {
+    width: 70%;
+    order: 1; /* lo pone a la izquierda */
+}
+
+  
+ 
+section::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+.contenido-principal {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 20px; /* espacio entre aside y article */
+}
+
+.footer {
+    background-color: midnightblue;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    margin-top: 30px;
+}
+
+aside {
+    width: 30%;
+    order: 2; /* lo pone a la derecha */
+}
+
+.sub{
+    color: midnightblue;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 40px;
+    text-align: center;
+}
+.frase{
+    font-size: 30px;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    text-align: left;
+}
+.autorfrase{
+    font-family: serif;
+    text-align: right;
+    font-size: 20px;
+}
+
+.horoscopo {
+    max-width: 800px;
+    margin: 40px auto;
+    padding: 20px;
+    background-color: #8181ff;
+    border-radius: 10px;
+    font-family: Arial, sans-serif;
+    text-align: center;
+  }
+  
+  .horoscopo h2 {
+    color: midnightblue;
+    margin-bottom: 20px;
+  }
+  
+  .horoscopo table {
+    width: 100%;
+    border-collapse: collapse;
+  }
+  
+  .horoscopo th,
+  .horoscopo td {
+    border: 1px solid white;
+    padding: 12px;
+  }
+  
+  .horoscopo th {
+    background-color: midnightblue;
+    color: white;
+  }
+  
+  .horoscopo tr:nth-child(even) {
+    background-color: #3476d8;
+  }
+
+
+
+
+
+/* formulario*/
+
+.formulario-contacto {
+    max-width: 600px;
+    margin: 50px auto;
+    padding: 30px;
+    background-color: #f0f0f0;
+    border-radius: 10px;
+    font-family: Arial, sans-serif;
+}
+
+.formulario-contacto h1 {
+    text-align: center;
+    color: midnightblue;
+    margin-bottom: 20px;
+}
+
+.formulario-contacto label {
+    display: block;
+    margin-top: 15px;
+    font-weight: bold;
+    color: #333;
+}
+
+.formulario-contacto input,
+.formulario-contacto textarea {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+    box-sizing: border-box;
+}
+
+.formulario-contacto button {
+    background-color: midnightblue;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    margin-top: 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.formulario-contacto button:hover {
+    background-color: #387dcb;
+}
+  
 
 
 
